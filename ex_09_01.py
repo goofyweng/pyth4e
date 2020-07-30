@@ -13,4 +13,13 @@ for line in fhand:
         if word in result: continue
         else: result[count] = word
         count = count + 1
-print(result)
+# print(result)
+vals = list(result.values())
+while True:
+    cname = input('Enter a word you want to check: ')
+    if cname in vals:
+        print('True')
+    elif cname=='done':
+        exit()
+    else:
+        print('False')
