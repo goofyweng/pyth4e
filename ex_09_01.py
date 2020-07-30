@@ -1,3 +1,4 @@
+# open a file and store all the words in dictionary
 fname = input('Enter the file name: ')
 result = dict()
 count = 0
@@ -15,6 +16,7 @@ for line in fhand:
         count = count + 1
 # print(result)
 vals = list(result.values())
+# check if cname is in the file
 while True:
     cname = input('Enter a word you want to check: ')
     if cname in vals:
