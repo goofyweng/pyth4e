@@ -1,4 +1,4 @@
-#   count the the week days in a Email file
+#   count the the week days in a Email log file
 fname = input('Enter the file name: ')
 try:
     fhand = open(fname)
@@ -11,6 +11,6 @@ for line in fhand:
     if len(words) == 0 or words[0] != 'From': continue
     # print(words)
     # get the third element in words and count in dictionary
-    count[words[2]] = count.get(words[2],0) + 1    
+    count[words[2]] = count.get(words[2],0) + 1
 print(count)
 print('Done!')
