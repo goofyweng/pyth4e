@@ -15,6 +15,7 @@ for line in fhand:
     # get the third element in words and count in dictionary
     count[words[1]] = count.get(words[1],0) + 1
 # print(count)
+# to find who has the most messages and print how many messages the person has
 whomax = None
 msgcount = None
 for a,b in count.items():
